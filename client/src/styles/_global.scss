@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+:root {
+  --main-color: #{$main-color};
+  --text-color: #{$text-color};
+  --secondary-color: #{$secondary-color};
+  --hover-color: #{$hover-color};
+  --focus-color: #{$focus-color};
+  --background-color: #{$background-color};
+  --block-color: #{$block-color};
+  --header-height: #{$header-height};
+  --catalog-menu-height: #{$catalog_top-menu-height};
+  --header-background-color: #{$header-background-color};
+  --accent-color: #{$accent-color};
+
+  font-family: Roboto, serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #747bff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
